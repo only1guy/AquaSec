@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                input('This is a test run')
+                sh 'aws iam get-user'
             }
         }
     }
